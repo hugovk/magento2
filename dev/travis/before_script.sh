@@ -42,6 +42,7 @@ case $TEST_SUITE in
             testIndex=$((testIndex+1))
             dirIndex=$((dirIndex+1))
             i=$((i+1))
+            echo "$i == ${test_set_size[$j]} && $j < $INTEGRATION_SETS ?"
             if [ $i -eq ${test_set_size[$j]} ] && [ $j -lt $INTEGRATION_SETS ]; then
                 j=$((j+1))
                 i=0
